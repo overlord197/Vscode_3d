@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth</title>
+    <style>
+        html {
+  height: 100%;
+  
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100% - 15%;
+  background-color: #454545;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+div{
+    color:#fff;
+    
+}
+a{
+        text-decoration: none;
+        color: white;
+    }
+    .rectangle {
+counter-reset: li; 
+list-style: none; 
+font: 20px "Trebuchet MS", "Lucida Sans";
+padding: 0;
+text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.rectangle a {
+position: relative;
+display: block;
+padding: .9em .4em .9em .8em;
+margin: 18% 0 .5em 2.5em;
+background: #D3D4DA;
+color: #444;
+text-decoration: none;
+transition: all .2s ease-out;
+}
+.rectangle a:hover {background: #DCDDE1;}       
+.rectangle a:before {
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -2.5em;
+top: 50%;
+margin-top: -1em;
+background: #9097A2;
+height: 2em;
+width: 2em;
+line-height: 2em;
+text-align: center;
+font-weight: bold;
+}
+.rectangle a:after {
+position: absolute;
+content: "";
+border: .5em solid transparent;
+left: -1em;
+top: 50%;
+margin-top: -.5em;
+transition: all .3s ease-out;
+}
+.rectangle a:hover:after {
+left: -.5em;
+border-left-color: #ffffff;
+}
+    </style>
+</head>
+<body>
+  <ol class="rectangle">
+    <li><a href="../model-1/index.html">Элемент списка</a></li>
+    <li><a href="../model-2/index.html">Элемент списка</a></li>
+    <li><a href="../model-3/index.html">Элемент списка</a></li>
+    <li><a href="../model-4/index.html">Элемент списка</a></li>
+    <li><a href="#">Элемент списка</a></li>
+  </ol>
+</body>
+</html>

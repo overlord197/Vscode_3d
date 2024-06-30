@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="construction.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" camera-orbit="-1.613deg 83.87deg 85.15m" field-of-view="38.75deg" environment-image="pillars_1k.hdr" exposure="0.52" skybox-image="pillars_1k.hdr" shadow-softness="1">
+      <div id="Back"> <a href="../index2.html">&#8592;</a></div>
+      <button class="Hotspot" slot="hotspot-2" data-position="-1.8360347571682265m 10.697986998008783m 2.1468572518186892m" data-normal="6.907174455271942e-20m -2.2204462065168535e-16m 1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">The model will be shown at EAGI College</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="-1.5688716339819244m 1.4938742123623179m 5.906541610547264m" data-normal="0.999999680517678m 0.0007993525770322298m 1.7749192716292713e-19m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Модель будет представляться в колледже ЕАГИ.</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+  </body>
+</html>
